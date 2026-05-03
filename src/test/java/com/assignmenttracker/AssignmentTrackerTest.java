@@ -30,7 +30,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class AssignmentTrackerTest {
 
     // ─── Configuration ────────────────────────────────────────────────────────
-    private static final String BASE_URL = "http://localhost:3000";
+    private static final String BASE_URL = System.getProperty("BASE_URL", "http://localhost:3000");
     private static final int WAIT_TIMEOUT = 10; // seconds
 
     // ─── Shared Driver (one browser session for the full suite) ───────────────
